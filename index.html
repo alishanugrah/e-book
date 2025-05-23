@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>e-book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Daftar Buku</h1>
+
+    <div class="top-bar">
+        <input type="text" id="searchInput" placeholder="Cari buku..." />
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <div class="genre" onclick="toggleBooks('motivasi')">Motivasi Hidup ▼</div>
+    <ul id="motivasi" class="book-list">
+      <li onclick="openBook('https://drive.google.com/file/d/1unXOnQ36sBrE2b2y8Nh9nkQM8q9IEphg/view?usp=drive_link')">Berani Tidak Disukai</li>
+      <li onclick="openBook('https://drive.google.com/file/d/1hX1nvPe8WX2ngpmTbuLMMgSP3M13mZwd/view?usp=drive_link')">Teknik Mengatasi Overthinking</li>
+      <li onclick="openBook('https://drive.google.com/file/d/1h_i8keT86AeLbEy3D6WPBiGHx0Lzbsod/view?usp=drive_link')">60 Detik Langsung Bisa Membaca Pikiran</li>
+      <li onclick="openBook('https://drive.google.com/file/d/1hjum1NClhXK_lokIrPRhi0jEpt4aO7Og/view?usp=drive_link')">Atomic Habits</li>
+      <li onclick="openBook('https://drive.google.com/file/d/1hi_l8G_wfrOxBdTS-rg6AE8jcgNfQIYa/view?usp=drive_link')">Bicara Itu Ada Seninya</li>
+      <li onclick="openBook('https://drive.google.com/file/d/1hhVfR9J3IdszG_DHHJiqyE0VjJgTXLTv/view?usp=drive_link')">Cara Berbicara Kepada Setiap Orang dalam Setiap Situasi</li>
+      <li onclick="openBook('')">Cerdik Berbicara Cerdas Menguasai Suasana</li>
+      <li onclick="openBook('')">Dark Psychology</li>
+      <li onclick="openBook('')">Filosofi Teras</li>
+      <li onclick="openBook('')">Mencari Teman & Memengaruhi Orang Lain</li>
+      <li onclick="openBook('')">Seni Berbicara Kepada Siapa Saja, Kapan Saja, di Mana Saja</li>
+
+    </ul>
+
+    <div class="genre" onclick="toggleBooks('novel')">Novel ▼</div>
+    <ul id="novel" class="book-list">
+      <li onclick="openBook('https://drive.google.com/file/d/2a3b4/view')">Cinta di Musim Semi</li>
+      <li onclick="openBook('https://drive.google.com/file/d/2c3d4/view')">Petualangan Sang Penjelajah</li>
+    </ul>
+
+    <div class="genre" onclick="toggleBooks('islami')">Buku Islami ▼</div>
+    <ul id="islami" class="book-list">
+      <li onclick="openBook('https://drive.google.com/file/d/3a4b5/view')">Belajar Shalat Khusyuk</li>
+      <li onclick="openBook('https://drive.google.com/file/d/3c4d5/view')">Kisah Sahabat Nabi</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
